@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)https://moodle.hku.hk/ -->
+<html dir="ltr" lang="en" xml:lang="en" class="yui3-js-enabled"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>HKU Moodle</title>
+    <link rel="shortcut icon" href="https://moodle.hku.hk/pluginfile.php/1/theme_hkumoodle3/favicon/1640160040/hkumoodle-logo-27x32.png">
+    
+<meta name="keywords" content="moodle, HKU Moodle">
+<link rel="stylesheet" type="text/css" href="./HKU Moodle_files/combo"><link charset="utf-8" rel="stylesheet" id="yui_3_17_2_1_1648799709545_8" href="./HKU Moodle_files/combo(1)"><script charset="utf-8" id="yui_3_17_2_1_1648799709545_9" src="./HKU Moodle_files/combo(2)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1648799709545_26" src="./HKU Moodle_files/combo(3)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1648799709545_28" src="./HKU Moodle_files/combo(4)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1648799709545_30" src="./HKU Moodle_files/combo(5)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1648799709545_36" src="./HKU Moodle_files/combo(6)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1648799709545_179" src="./HKU Moodle_files/MathJax.js.download" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="./HKU Moodle_files/styles.php">
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/moodle.hku.hk","sesskey":"kReYwZql8i","sessiontimeout":"7200","themerev":"1640160040","slasharguments":1,"theme":"hkumoodle3","iconsystemmodule":"core\/icon_system_standard","jsrev":"1636614541","admin":"admin","svgicons":true,"usertimezone":"Asia\/Hong_Kong","contextid":2,"langrev":1632180141,"templaterev":"1636614541"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/moodle.hku.hk\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/moodle.hku.hk\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/moodle.hku.hk\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/moodle.hku.hk\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/moodle.hku.hk\/theme\/yui_combo.php?m\/1636614541\/","combine":true,"comboBase":"https:\/\/moodle.hku.hk\/theme\/yui_combo.php?","ext":false,"root":"m\/1636614541\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_musictheory-musictheoryqtype":{"requires":["base","node","datatype","node-event-simulate"]},"moodle-qtype_musictheory-musictheoryui":{"requires":["base","node","datatype","panel","dd-plugin"]},"moodle-qtype_musictheory-musictheorykeyboardui":{"requires":["base","node","datatype"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_hsuforum-io":{"requires":["base","io-base","io-form","io-upload-iframe","json-parse"]},"moodle-mod_hsuforum-livelog":{"requires":["widget"]},"moodle-mod_hsuforum-article":{"requires":["base","node","event","router","core_rating","querystring","moodle-mod_hsuforum-io","moodle-mod_hsuforum-livelog","moodle-core-formchangechecker"]},"moodle-mod_oublog-tagselector":{"requires":["base","node","autocomplete","autocomplete-filters","autocomplete-highlighters"]},"moodle-mod_oublog-savecheck":{"requires":["base","node","io","panel","moodle-core-notification-alert"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_scheduler-delselected":{"requires":["base","node","event"]},"moodle-mod_scheduler-saveseen":{"requires":["base","node","event"]},"moodle-mod_scheduler-studentlist":{"requires":["base","node","event","io"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/moodle.hku.hk\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/moodle.hku.hk\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1636614541\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/moodle.hku.hk\/lib\/javascript.php\/1636614541\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/moodle.hku.hk\/lib\/javascript.php\/1636614541\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.8\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google web fonts -->
+    <link href="./HKU Moodle_files/css" rel="stylesheet">
+
+	<link rel="stylesheet" href="./HKU Moodle_files/all.css" crossorigin="anonymous">
+<script type="text/x-mathjax-config;executed=true">
+MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="./HKU Moodle_files/requirejs.php"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/event" src="./HKU Moodle_files/requirejs(1).php"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./HKU Moodle_files/javascript.php"></script><script type="text/javascript">
+require(['jquery'], function($) {
+    require(['theme_boost/bootstrap/popover'], function() {
+        var target = $("#calendar-day-popover-link-1-2022-90-0");
+        target.popover({
+            content: function() {
+                var source = target.next().find("> *:not('.hidden')");
+                var content = $('<div>');
+
+                if (source.length) {
+                    content.html(source.clone(false));
+                } else {
+                    content.html(target.data('alternate'));
+                }
+
+                return content.html();
+            }
+        });
+    });
+});
+;
+
+require(['jquery'], function($) {
+    require(['theme_boost/bootstrap/popover'], function() {
+        var target = $("#calendar-day-popover-link-1-2022-97-0");
+        target.popover({
+            content: function() {
+                var source = target.next().find("> *:not('.hidden')");
+                var content = $('<div>');
+
+                if (source.length) {
+                    content.html(source.clone(false));
+                } else {
+                    content.html(target.data('alternate'));
+                }
+
+                return content.html();
+            }
+        });
+    });
+});
+;
+
+require(['jquery'], function($) {
+    require(['theme_boost/bootstrap/popover'], function() {
+        var target = $("#calendar-day-popover-link-1-2022-98-0");
+        target.popover({
+            content: function() {
+                var source = target.next().find("> *:not('.hidden')");
+                var content = $('<div>');
+
+                if (source.length) {
+                    content.html(source.clone(false));
+                } else {
+                    content.html(target.data('alternate'));
+                }
+
+                return content.html();
+            }
+        });
+    });
+});
+;
+
+require(['jquery'], function($) {
+    require(['theme_boost/bootstrap/popover'], function() {
+        var target = $("#calendar-day-popover-link-1-2022-99-0");
+        target.popover({
+            content: function() {
+                var source = target.next().find("> *:not('.hidden')");
+                var content = $('<div>');
+
+                if (source.length) {
+                    content.html(source.clone(false));
+                } else {
+                    content.html(target.data('alternate'));
+                }
+
+                return content.html();
+            }
+        });
+    });
+});
+;
+
+require(['jquery'], function($) {
+    require(['theme_boost/bootstrap/popover'], function() {
+        var target = $("#calendar-day-popover-link-1-2022-106-0");
+        target.popover({
+            content: function() {
+                var source = target.next().find("> *:not('.hidden')");
+                var content = $('<div>');
+
+                if (source.length) {
+                    content.html(source.clone(false));
+                } else {
+                    content.html(target.data('alternate'));
+                }
+
+                return content.html();
+            }
+        });
+    });
+});
+;
+
+require(['jquery'], function($) {
+    require(['theme_boost/bootstrap/popover'], function() {
+        var target = $("#calendar-day-popover-link-1-2022-108-0");
+        target.popover({
+            content: function() {
+                var source = target.next().find("> *:not('.hidden')");
+                var content = $('<div>');
+
+                if (source.length) {
+                    content.html(source.clone(false));
+                } else {
+                    content.html(target.data('alternate'));
+                }
+
+                return content.html();
+            }
+        });
+    });
+});
+;
+
+require(['jquery'], function($) {
+    require(['theme_boost/bootstrap/popover'], function() {
+        var target = $("#calendar-day-popover-link-1-2022-109-0");
+        target.popover({
+            content: function() {
+                var source = target.next().find("> *:not('.hidden')");
+                var content = $('<div>');
+
+                if (source.length) {
+                    content.html(source.clone(false));
+                } else {
+                    content.html(target.data('alternate'));
+                }
+
+                return content.html();
+            }
+        });
+    });
+});
+;
+
+require(['jquery'], function($) {
+    require(['theme_boost/bootstrap/popover'], function() {
+        var target = $("#calendar-day-popover-link-1-2022-119-0");
+        target.popover({
+            content: function() {
+                var source = target.next().find("> *:not('.hidden')");
+                var content = $('<div>');
+
+                if (source.length) {
+                    content.html(source.clone(false));
+                } else {
+                    content.html(target.data('alternate'));
+                }
+
+                return content.html();
+            }
+        });
+    });
+});
+;
+
+require([
+    'jquery',
+    'core_calendar/selectors',
+    'core_calendar/events',
+], function(
+    $,
+    CalendarSelectors,
+    CalendarEvents
+) {
+
+    $('body').on(CalendarEvents.filterChanged, function(e, data) {
+        M.util.js_pending("month-mini-0-filterChanged");
+        // A filter value has been changed.
+        // Find all matching cells in the popover data, and hide them.
+        $("#month-mini-2022-4-0")
+            .find(CalendarSelectors.popoverType[data.type])
+            .toggleClass('hidden', !!data.hidden);
+        M.util.js_complete("month-mini-0-filterChanged");
+    });
+});
+</script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888; display: contents}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover, .MJXp-munder {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body id="page-site-index" class="format-site course path-site chrome dir-ltr lang-en yui-skin-sam yui3-skin-sam moodle-hku-hk pagelayout-frontpage course-1 context-2 has-region-side-pre has-region-side-post used-region-side-pre used-region-side-post blockstyle-01 sidebar-enabled sidebar-open jsenabled"><div id="MathJax_Message" style="display: none;"></div>
+
+<div>
+    <a class="sr-only sr-only-focusable" href="https://moodle.hku.hk/#maincontent">Skip to main content</a>
+</div><script src="./HKU Moodle_files/javascript(1).php"></script>
+<script src="./HKU Moodle_files/javascript(2).php"></script>
+<script src="./HKU Moodle_files/combo(7)"></script><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div><script src="./HKU Moodle_files/jquery-3.5.1.min.js.download"></script>
+<script src="./HKU Moodle_files/jquery.easing.min.1.4.js.download"></script>
+<script src="./HKU Moodle_files/slideshow.js.download"></script>
+<script src="./HKU Moodle_files/carousel.js.download"></script>
+<script src="./HKU Moodle_files/javascript(3).php"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+<!-- Updated on 4-6-2021 by Ryan, hide sidebar-btn if not logged-in 
+   original: without '&& isloggedin()'
+-->
+<div id="sidebar" class="">
+	<aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><a href="https://moodle.hku.hk/#sb-2" class="sr-only sr-only-focusable">Skip Navigation</a>
+
+<section id="inst4" class=" block_navigation block  card mb-3" role="navigation" data-block="navigation" aria-labelledby="instance-4-header">
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-4-header" class="card-title d-inline">Navigation</h5>
+
+
+        <div class="card-text content mt-3">
+            <ul class="block_tree list" role="tree" data-ajax-loader="block_navigation/nav_loader"><li class="type_unknown depth_1 contains_branch current_branch" aria-labelledby="label_1_1" tabindex="-1"><p class="tree_item branch active_tree_node navigation_node" role="treeitem" aria-expanded="true" aria-owns="random6246afde702451_group" data-collapsible="false" tabindex="0" aria-selected="true"><a tabindex="-1" id="label_1_1" href="https://moodle.hku.hk/">Home</a></p><ul id="random6246afde702451_group" role="group" tabindex="-1"><li class="type_setting depth_2 item_with_icon" aria-labelledby="label_2_2" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_2_2" href="https://moodle.hku.hk/my/"><img class="icon navicon" alt="" aria-hidden="true" src="./HKU Moodle_files/dashboard.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">Dashboard</span></a></p></li><li class="type_course depth_2 contains_branch" aria-labelledby="label_2_3" tabindex="-1"><p class="tree_item branch" role="treeitem" aria-expanded="false" aria-owns="random6246afde702453_group" tabindex="-1" aria-selected="false"><span tabindex="-1" id="label_2_3" title="HKU Moodle">Site pages</span></p><ul id="random6246afde702453_group" role="group" aria-hidden="true" tabindex="-1"><li class="type_unknown depth_3 item_with_icon" aria-labelledby="label_3_5" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_3_5" href="https://moodle.hku.hk/blog/index.php"><img class="icon navicon" alt="" aria-hidden="true" src="./HKU Moodle_files/navigationitem.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">Site blogs</span></a></p></li><li class="type_custom depth_3 item_with_icon" aria-labelledby="label_3_6" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_3_6" href="https://moodle.hku.hk/badges/view.php?type=1"><img class="icon navicon" alt="" aria-hidden="true" src="./HKU Moodle_files/navigationitem.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">Site badges</span></a></p></li><li class="type_setting depth_3 item_with_icon" aria-labelledby="label_3_7" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_3_7" href="https://moodle.hku.hk/tag/search.php"><img class="icon navicon" alt="" aria-hidden="true" src="./HKU Moodle_files/navigationitem.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">Tags</span></a></p></li><li class="type_custom depth_3 item_with_icon" aria-labelledby="label_3_8" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_3_8" href="https://moodle.hku.hk/calendar/view.php?view=month"><img class="icon navicon" alt="" aria-hidden="true" src="./HKU Moodle_files/calendar.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">Calendar</span></a></p></li><li class="type_custom depth_3 item_with_icon" aria-labelledby="label_3_10" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_3_10" href="https://moodle.hku.hk/local/googledriveinmoodle/GoogleDriveInMoodle.php?id=1"><img class="icon navicon" alt="" aria-hidden="true" src="./HKU Moodle_files/navigationitem.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">Courseware Folder in Google Drive</span></a></p></li></ul></li><li class="type_system depth_2 contains_branch" aria-labelledby="label_2_11" tabindex="-1"><p class="tree_item branch" role="treeitem" aria-expanded="true" aria-owns="random6246afde702459_group" tabindex="-1" aria-selected="false"><span tabindex="-1" id="label_2_11">My courses</span></p><ul id="random6246afde702459_group" role="group" tabindex="-1"><li class="type_custom depth_3 item_with_icon" aria-labelledby="label_3_12" tabindex="-1"><p class="tree_item hasicon" role="treeitem" tabindex="-1" aria-selected="false"><a tabindex="-1" id="label_3_12" href="https://moodle.hku.hk/my/"><img class="icon navicon" alt="" aria-hidden="true" src="./HKU Moodle_files/navigationitem.svg" tabindex="-1"><span class="item-content-wrap" tabindex="-1">More...</span></a></p></li></ul></li></ul></li></ul>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-2"></span><a href="https://moodle.hku.hk/#sb-4" class="sr-only sr-only-focusable">Skip My courses</a>
+
+<section id="inst476784" class=" block_course_list block list_block  card mb-3" role="navigation" data-block="course_list" aria-labelledby="instance-476784-header">
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-476784-header" class="card-title d-inline">My courses</h5>
+
+
+        <div class="card-text content mt-3">
+            <ul class="unlist"><li class="r0"><div class="column c1"><a title="_MSC-WKSHT1_S2_1_2021" href="https://moodle.hku.hk/course/view.php?id=92969"><img class="icon " alt="Course" title="Course" src="./HKU Moodle_files/course.svg">MSC-WKSHT1_S2 Python Workshop for HKUCS MSc Students (Sem 2) [2021]</a></div></li>
+<li class="r1"><div class="column c1"><a title="_MSC-WKSHL1_S2_2_2021" href="https://moodle.hku.hk/course/view.php?id=92956"><img class="icon " alt="Course" title="Course" src="./HKU Moodle_files/course.svg">MSC-WKSHL1_S2 Dissertation Writing Workshop for HKUCS MSc Students (Sem 2 - Group 2) [2021]</a></div></li>
+<li class="r0"><div class="column c1"><a title="COMP7305_2B_2021" href="https://moodle.hku.hk/course/view.php?id=92890"><img class="icon " alt="Course" title="Course" src="./HKU Moodle_files/course.svg">COMP7305 Cluster and cloud computing [Section 2B, 2021]</a></div></li>
+<li class="r1"><div class="column c1"><a title="_COMP7705_2021" href="https://moodle.hku.hk/course/view.php?id=92547"><img class="icon " alt="Course" title="Course" src="./HKU Moodle_files/course.svg">COMP7705 MSc(CompSc) Projects [2021]</a></div></li>
+<li class="r0"><div class="column c1"><a title="_MSCCS_2021" href="https://moodle.hku.hk/course/view.php?id=91752"><img class="icon " alt="Course" title="Course" src="./HKU Moodle_files/course.svg">MSCCS Master of Science in Computer Science - MSc(CompSc) Homepage [2021]</a></div></li>
+<li class="r1"><div class="column c1"><a title="_MSC-WKSHL2_S1_A_2021" href="https://moodle.hku.hk/course/view.php?id=91747"><img class="icon " alt="Course" title="Course" src="./HKU Moodle_files/course.svg">MSC-WKSHL2_S1 Presentation Skills Workshop for HKUCS MSc Students (Sem 1 - Group A) [2021]</a></div></li>
+<li class="r0"><div class="column c1"><a title="_COMP7104_DASC7104_1B_2021" href="https://moodle.hku.hk/course/view.php?id=91729"><img class="icon " alt="Course" title="Course" src="./HKU Moodle_files/course.svg">COMP7104_DASC7104 Advanced database systems (Section 1B) [2021]</a></div></li>
+<li class="r1"><div class="column c1"><a title="COMP7905_2A_2021" href="https://moodle.hku.hk/course/view.php?id=89528"><img class="icon " alt="Course" title="Course" src="./HKU Moodle_files/course.svg">COMP7905 Reverse engineering and malware analysis [Section 2A, 2021]</a></div></li>
+<li class="r0"><div class="column c1"><a title="COMP7506_2A_2021" href="https://moodle.hku.hk/course/view.php?id=89517"><img class="icon " alt="Course" title="Course" src="./HKU Moodle_files/course.svg">COMP7506 Smart phone apps development [Section 2A, 2021]</a></div></li>
+<li class="r1"><div class="column c1"><a title="COMP7309_2A_2021" href="https://moodle.hku.hk/course/view.php?id=89511"><img class="icon " alt="Course" title="Course" src="./HKU Moodle_files/course.svg">COMP7309 Quantum computing and artificial intelligence [Section 2A, 2021]</a></div></li>
+<li class="r0"><div class="column c1"><a title="COMP7507_1A_2021" href="https://moodle.hku.hk/course/view.php?id=86155"><img class="icon " alt="Course" title="Course" src="./HKU Moodle_files/course.svg">COMP7507 Visualization and visual analytics [Section 1A, 2021]</a></div></li>
+<li class="r1"><div class="column c1"><a title="COMP7503_1A_2021" href="https://moodle.hku.hk/course/view.php?id=86153"><img class="icon " alt="Course" title="Course" src="./HKU Moodle_files/course.svg">COMP7503 Multimedia technologies [Section 1A, 2021]</a></div></li>
+<li class="r0"><div class="column c1"><a title="COMP7404_1B_2021" href="https://moodle.hku.hk/course/view.php?id=86149"><img class="icon " alt="Course" title="Course" src="./HKU Moodle_files/course.svg">COMP7404 Computational intelligence and machine learning [Section 1B, 2021]</a></div></li>
+<li class="r1"><div class="column c1"><a title="COMP7201_1A_2021" href="https://moodle.hku.hk/course/view.php?id=86145"><img class="icon " alt="Course" title="Course" src="./HKU Moodle_files/course.svg">COMP7201 Analysis and design of enterprise applications in UML [Section 1A, 2021]</a></div></li></ul>
+            <div class="footer"><a href="https://moodle.hku.hk/course/index.php">All courses</a> ...</div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-4"></span></aside>    <div id="sidebar-btn"><span></span><span></span><span></span></div>
+</div>
+
+<div id="wrapper">
+
+
+<header id="page-header" class="clearfix">              	
+		<div class="container-fluid">    
+	<div class="row-fluid">
+
+				<div class="span6">
+			<div class="logo-header">
+				<a class="logo" href="https://moodle.hku.hk/" title="Home">
+					<img src="./HKU Moodle_files/hkumoodle-logo.png" class="img-responsive" alt="logo">				</a>
+			</div>
+		</div>
+		      	
+
+		<div class="span6 login-header">
+			<div class="profileblock">
+
+				<div id="loggedin-user"><div class="popover-region collapsed popover-region-notifications" id="nav-notification-popover-container" data-userid="230371" data-region="popover-region">
+    <div class="popover-region-toggle nav-link" data-region="popover-region-toggle" role="button" aria-controls="popover-region-container-6246afde88c966246afde7024513" aria-haspopup="true" aria-label="Show notification window with no new notifications" tabindex="0">
+                <img class="icon " alt="Toggle notifications menu" title="Toggle notifications menu" src="./HKU Moodle_files/notifications.svg">
+        <div class="count-container hidden" data-region="count-container" aria-label="There are 0 unread notifications">0</div>
+
+    </div>
+    <div id="popover-region-container-6246afde88c966246afde7024513" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="Notification window" role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notifications</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button" href="https://moodle.hku.hk/#" title="Mark all as read" data-action="mark-all-read" role="button" aria-label="Mark all as read">
+            <span class="normal-icon"><img class="icon " alt="" aria-hidden="true" src="./HKU Moodle_files/markasread.svg"></span>
+            <span class="loading-icon icon-no-margin"><img class="icon " alt="Loading" title="Loading" src="./HKU Moodle_files/loading.gif"></span>
+        </a>
+        <a href="https://moodle.hku.hk/message/notificationpreferences.php?userid=230371" title="Notification preferences" aria-label="Notification preferences">
+            <img class="icon " alt="" aria-hidden="true" src="./HKU Moodle_files/settings.svg">
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications" data-region="all-notifications" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">You have no notifications</div>
+
+            </div>
+            <span class="loading-icon icon-no-margin"><img class="icon " alt="Loading" title="Loading" src="./HKU Moodle_files/loading.gif"></span>
+        </div>
+                <a class="see-all-link" href="https://moodle.hku.hk/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="popover-region collapsed" data-region="popover-region-messages">
+    <a id="message-drawer-toggle-6246afde896e66246afde7024514" class="nav-link d-inline-block popover-region-toggle position-relative" href="https://moodle.hku.hk/#" role="button">
+        <img class="icon " alt="Toggle messaging drawer" title="Toggle messaging drawer" src="./HKU Moodle_files/message.svg">
+        <div class="count-container hidden" data-region="count-container" aria-label="There are 0 unread conversations">0</div>
+    </a>
+    <span class="sr-only sr-only-focusable" data-region="jumpto" tabindex="-1"></span></div><div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items d-inline" id="action-menu-0" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar d-flex " id="action-menu-0-menubar" role="menubar">
+
+            
+
+
+                <div class="action-menu-trigger">
+                    <div class="dropdown">
+                        <a href="javascript:void(0)" tabindex="0" class="d-inline-block  dropdown-toggle icon-no-margin" id="action-menu-toggle-0" aria-label="User menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="action-menu-0-menu">
+                            
+                            <span class="userbutton"><span class="usertext mr-1">Zhang Baichuan</span><span class="avatars"><span class="avatar current"><img src="./HKU Moodle_files/f2.png" class="userpicture defaultuserpic" width="35" height="35" alt=""></span></span></span>
+                                
+                            <div class="caret"></div>
+                        </a>
+                            <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-0-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-0" role="menu" data-align="tr-br">
+                                        <a href="https://moodle.hku.hk/my/" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1">
+                                                <img class="icon " alt="" aria-hidden="true" src="./HKU Moodle_files/dashboard.svg">
+                                            <span class="menu-action-text" id="actionmenuaction-1">
+                                                Dashboard
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                        <a href="https://moodle.hku.hk/user/profile.php?id=230371" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2">
+                                                <img class="icon " alt="" aria-hidden="true" src="./HKU Moodle_files/user.svg">
+                                            <span class="menu-action-text" id="actionmenuaction-2">
+                                                Profile
+                                            </span>
+                                        </a>
+                                        <a href="https://moodle.hku.hk/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-3">
+                                                <img class="icon " alt="" aria-hidden="true" src="./HKU Moodle_files/grades.svg">
+                                            <span class="menu-action-text" id="actionmenuaction-3">
+                                                Grades
+                                            </span>
+                                        </a>
+                                        <a href="https://moodle.hku.hk/message/index.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-4">
+                                                <img class="icon " alt="" aria-hidden="true" src="./HKU Moodle_files/message.svg">
+                                            <span class="menu-action-text" id="actionmenuaction-4">
+                                                Messages
+                                            </span>
+                                        </a>
+                                        <a href="https://moodle.hku.hk/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-5">
+                                                <img class="icon " alt="" aria-hidden="true" src="./HKU Moodle_files/preferences.svg">
+                                            <span class="menu-action-text" id="actionmenuaction-5">
+                                                Preferences
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                        <a href="https://moodle.hku.hk/login/logout.php?sesskey=kReYwZql8i" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6">
+                                                <img class="icon " alt="" aria-hidden="true" src="./HKU Moodle_files/logout.svg">
+                                            <span class="menu-action-text" id="actionmenuaction-6">
+                                                Log out
+                                            </span>
+                                        </a>
+                            </div>
+                    </div>
+                </div>
+
+        </div>
+
+</div></div><a href="https://moodle.hku.hk/user/profile.php?id=230371" class="d-inline-block aabtn"><img src="./HKU Moodle_files/f1.png" class="welcome_userpicture defaultuserpic" width="80" height="80" alt="Picture of Zhang Baichuan" title="Picture of Zhang Baichuan"></a></div>
+						</div>
+					</div>
+
+				</div>
+			</div>               
+</header>
+<!--
+<header class="navbar">
+    <nav class="navbar-inner">
+        <div class="hkumoodle3-custom-menu container-fluid">
+            <a class="brand" href="https://moodle.hku.hk">Home</a>            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="nav-collapse collapse">
+            	<ul class="nav">
+                <ul class="nav"><li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown" title="My courses">My courses<div class="caret"></div></a><ul class="dropdown-menu"><li><a title="MSC-WKSHT1_S2 Python Workshop for HKUCS MSc Students (Sem 2) [2021]" href="https://moodle.hku.hk/course/view.php?id=92969">_MSC-WKSHT1_S2_1_2021</a></li><li><a title="MSC-WKSHL1_S2 Dissertation Writing Workshop for HKUCS MSc Students (Sem 2 - Group 2) [2021]" href="https://moodle.hku.hk/course/view.php?id=92956">_MSC-WKSHL1_S2_2_2021</a></li><li><a title="COMP7305 Cluster and cloud computing [Section 2B, 2021]" href="https://moodle.hku.hk/course/view.php?id=92890">COMP7305_2B_2021</a></li><li><a title="COMP7705 MSc(CompSc) Projects [2021]" href="https://moodle.hku.hk/course/view.php?id=92547">_COMP7705_2021</a></li><li><a title="MSCCS Master of Science in Computer Science - MSc(CompSc) Homepage [2021]" href="https://moodle.hku.hk/course/view.php?id=91752">_MSCCS_2021</a></li><li><a title="MSC-WKSHL2_S1 Presentation Skills Workshop for HKUCS MSc Students (Sem 1 - Group A) [2021]" href="https://moodle.hku.hk/course/view.php?id=91747">_MSC-WKSHL2_S1_A_2021</a></li><li><a title="COMP7104_DASC7104 Advanced database systems (Section 1B) [2021]" href="https://moodle.hku.hk/course/view.php?id=91729">_COMP7104_DASC7104_1B_2021</a></li><li><a title="COMP7905 Reverse engineering and malware analysis [Section 2A, 2021]" href="https://moodle.hku.hk/course/view.php?id=89528">COMP7905_2A_2021</a></li><li><a title="COMP7506 Smart phone apps development [Section 2A, 2021]" href="https://moodle.hku.hk/course/view.php?id=89517">COMP7506_2A_2021</a></li><li><a title="COMP7309 Quantum computing and artificial intelligence [Section 2A, 2021]" href="https://moodle.hku.hk/course/view.php?id=89511">COMP7309_2A_2021</a></li><li><a title="COMP7507 Visualization and visual analytics [Section 1A, 2021]" href="https://moodle.hku.hk/course/view.php?id=86155">COMP7507_1A_2021</a></li><li><a title="COMP7503 Multimedia technologies [Section 1A, 2021]" href="https://moodle.hku.hk/course/view.php?id=86153">COMP7503_1A_2021</a></li><li><a title="COMP7404 Computational intelligence and machine learning [Section 1B, 2021]" href="https://moodle.hku.hk/course/view.php?id=86149">COMP7404_1B_2021</a></li><li><a title="COMP7201 Analysis and design of enterprise applications in UML [Section 1A, 2021]" href="https://moodle.hku.hk/course/view.php?id=86145">COMP7201_1A_2021</a></li></ul></ul>                </ul>
+                <ul class="nav pull-right">
+                    <li></li>
+                </ul>
+                
+                                
+                                <form id="search" action="https://moodle.hku.hk/course/search.php" >
+                	<label for="coursesearchbox" class="hkumoodle3-sr-only">Search courses</label>						
+					<input id="coursesearchbox" type="text" onFocus="if(this.value =='Search courses' ) this.value=''" onBlur="if(this.value=='') this.value='Search courses'" value="Search courses" name="search" >
+					<button type="submit"><span class="hkumoodle3-sr-only">Submit</span></button>						
+				</form>
+                                
+            </div>
+        </div>
+    </nav>
+</header>
+-->
+
+
+
+<div id="page" class="container-fluid">
+	<div id="page-header-nav" class="clearfix"> </div>
+    <div id="page-content" class="row-fluid">
+    	            <div id="region-bs-main-and-pre" class="span9">
+            <div class="row-fluid">
+            	                <section id="region-main" class="span8">
+                                    	<span class="notifications" id="user-notifications"></span><div role="main"><span id="maincontent"></span><a class="skip-block skip aabtn" href="https://moodle.hku.hk/#skipmycourses">Skip my courses</a><div id="frontpage-course-list"><h2>My courses</h2><div class="courses frontpage-course-list-enrolled"><div class="coursebox clearfix odd first" data-courseid="92969" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://moodle.hku.hk/course/view.php?id=92969">MSC-WKSHT1_S2 Python Workshop for HKUCS MSc Students (Sem 2) [2021]</a></h3><div class="moreinfo"></div></div><div class="content"><div class="summary"><h3 class="coursename"><a class="" href="https://moodle.hku.hk/course/view.php?id=92969">MSC-WKSHT1_S2 Python Workshop for HKUCS MSc Students (Sem 2) [2021]</a></h3><div></div></div><div class="teachers">Teacher: <a href="https://moodle.hku.hk/user/view.php?id=38247&amp;course=1">Lam Yat Kin</a></div><div class="course-btn"><p><a class="btn btn-primary" href="https://moodle.hku.hk/course/view.php?id=92969">Click to enter this course</a></p></div></div></div><div class="coursebox clearfix even" data-courseid="92956" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://moodle.hku.hk/course/view.php?id=92956">MSC-WKSHL1_S2 Dissertation Writing Workshop for HKUCS MSc Students (Sem 2 - Group 2) [2021]</a></h3><div class="moreinfo"></div></div><div class="content"><div class="summary"><h3 class="coursename"><a class="" href="https://moodle.hku.hk/course/view.php?id=92956">MSC-WKSHL1_S2 Dissertation Writing Workshop for HKUCS MSc Students (Sem 2 - Group 2) [2021]</a></h3><div></div></div><div class="teachers">Teacher: <a href="https://moodle.hku.hk/user/view.php?id=46187&amp;course=1">Fong Natalie Sze Nga</a>, <a href="https://moodle.hku.hk/user/view.php?id=137806&amp;course=1">Ngeow Yeok Hwa Karen</a></div><div class="course-btn"><p><a class="btn btn-primary" href="https://moodle.hku.hk/course/view.php?id=92956">Click to enter this course</a></p></div></div></div><div class="coursebox clearfix odd" data-courseid="92890" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://moodle.hku.hk/course/view.php?id=92890">COMP7305 Cluster and cloud computing [Section 2B, 2021]</a></h3><div class="moreinfo"></div></div><div class="content"><div class="summary"><h3 class="coursename"><a class="" href="https://moodle.hku.hk/course/view.php?id=92890">COMP7305 Cluster and cloud computing [Section 2B, 2021]</a></h3><div></div></div><div class="teachers">Teacher: <a href="https://moodle.hku.hk/user/view.php?id=179176&amp;course=1">MSc(CompSc) Moodle Course Admin</a>, <a href="https://moodle.hku.hk/user/view.php?id=39228&amp;course=1">Wang Cho Li</a></div><div class="course-btn"><p><a class="btn btn-primary" href="https://moodle.hku.hk/course/view.php?id=92890">Click to enter this course</a></p></div></div></div><div class="coursebox clearfix even" data-courseid="92547" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://moodle.hku.hk/course/view.php?id=92547">COMP7705 MSc(CompSc) Projects [2021]</a></h3><div class="moreinfo"></div></div><div class="content"><div class="summary"><h3 class="coursename"><a class="" href="https://moodle.hku.hk/course/view.php?id=92547">COMP7705 MSc(CompSc) Projects [2021]</a></h3><div></div></div><div class="teachers">MSc Programme Office: <a href="https://moodle.hku.hk/user/view.php?id=32167&amp;course=1">Lam Pik Shan Priscilla</a></div><div class="course-btn"><p><a class="btn btn-primary" href="https://moodle.hku.hk/course/view.php?id=92547">Click to enter this course</a></p></div></div></div><div class="coursebox clearfix odd" data-courseid="91752" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://moodle.hku.hk/course/view.php?id=91752">MSCCS Master of Science in Computer Science - MSc(CompSc) Homepage [2021]</a></h3><div class="moreinfo"></div></div><div class="content"><div class="summary"><h3 class="coursename"><a class="" href="https://moodle.hku.hk/course/view.php?id=91752">MSCCS Master of Science in Computer Science - MSc(CompSc) Homepage [2021]</a></h3><div></div></div><div class="teachers">MSc Programme Office: <a href="https://moodle.hku.hk/user/view.php?id=46293&amp;course=1">Fong Sonia Shung Wan</a>, <a href="https://moodle.hku.hk/user/view.php?id=108937&amp;course=1">Guo Hangyu David</a>, <a href="https://moodle.hku.hk/user/view.php?id=32167&amp;course=1">Lam Pik Shan Priscilla</a>, <a href="https://moodle.hku.hk/user/view.php?id=35582&amp;course=1">Lam Wing Yee</a>, <a href="https://moodle.hku.hk/user/view.php?id=36003&amp;course=1">Tang Keric Kam Wan</a></div><div class="course-btn"><p><a class="btn btn-primary" href="https://moodle.hku.hk/course/view.php?id=91752">Click to enter this course</a></p></div></div></div><div class="coursebox clearfix even" data-courseid="91747" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://moodle.hku.hk/course/view.php?id=91747">MSC-WKSHL2_S1 Presentation Skills Workshop for HKUCS MSc Students (Sem 1 - Group A) [2021]</a></h3><div class="moreinfo"></div></div><div class="content"><div class="summary"><h3 class="coursename"><a class="" href="https://moodle.hku.hk/course/view.php?id=91747">MSC-WKSHL2_S1 Presentation Skills Workshop for HKUCS MSc Students (Sem 1 - Group A) [2021]</a></h3><div></div></div><div class="teachers">Teacher: <a href="https://moodle.hku.hk/user/view.php?id=46187&amp;course=1">Fong Natalie Sze Nga</a>, <a href="https://moodle.hku.hk/user/view.php?id=124816&amp;course=1">Zee Melanie</a></div><div class="course-btn"><p><a class="btn btn-primary" href="https://moodle.hku.hk/course/view.php?id=91747">Click to enter this course</a></p></div></div></div><div class="coursebox clearfix odd" data-courseid="91729" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://moodle.hku.hk/course/view.php?id=91729">COMP7104_DASC7104 Advanced database systems (Section 1B) [2021]</a></h3><div class="moreinfo"></div></div><div class="content"><div class="summary"><h3 class="coursename"><a class="" href="https://moodle.hku.hk/course/view.php?id=91729">COMP7104_DASC7104 Advanced database systems (Section 1B) [2021]</a></h3><div></div></div><div class="teachers">Teacher: <a href="https://moodle.hku.hk/user/view.php?id=180356&amp;course=1">Cautis Bogdan</a>, <a href="https://moodle.hku.hk/user/view.php?id=238910&amp;course=1">Cautis Bogdan</a>, <a href="https://moodle.hku.hk/user/view.php?id=179176&amp;course=1">MSc(CompSc) Moodle Course Admin</a></div><div class="course-btn"><p><a class="btn btn-primary" href="https://moodle.hku.hk/course/view.php?id=91729">Click to enter this course</a></p></div></div></div><div class="coursebox clearfix even" data-courseid="89528" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://moodle.hku.hk/course/view.php?id=89528">COMP7905 Reverse engineering and malware analysis [Section 2A, 2021]</a></h3><div class="moreinfo"></div></div><div class="content"><div class="summary"><h3 class="coursename"><a class="" href="https://moodle.hku.hk/course/view.php?id=89528">COMP7905 Reverse engineering and malware analysis [Section 2A, 2021]</a></h3><div></div></div><div class="teachers">Teacher: <a href="https://moodle.hku.hk/user/view.php?id=105600&amp;course=1">Li Fu Kay Frankie</a>, <a href="https://moodle.hku.hk/user/view.php?id=179176&amp;course=1">MSc(CompSc) Moodle Course Admin</a></div><div class="course-btn"><p><a class="btn btn-primary" href="https://moodle.hku.hk/course/view.php?id=89528">Click to enter this course</a></p></div></div></div><div class="coursebox clearfix odd" data-courseid="89517" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://moodle.hku.hk/course/view.php?id=89517">COMP7506 Smart phone apps development [Section 2A, 2021]</a></h3><div class="moreinfo"></div></div><div class="content"><div class="summary"><h3 class="coursename"><a class="" href="https://moodle.hku.hk/course/view.php?id=89517">COMP7506 Smart phone apps development [Section 2A, 2021]</a></h3><div><div class="no-overflow"><p></p>
+<h4><i><b><span style="color: rgb(239, 69, 64);">Hi, welcome to the course COMP7506A Smart Phone Apps Development!</span></b></i></h4>
+<p><b><span style="color: rgb(125, 159, 211);">Smart phones have become very popular in recent years. For iPhones alone, CEO Tim Cook announced that Apple has sold the billionth iPhone in July 2016. In addition to iPhones, there are also Android phones, Symbian phones as well as Windows phones. Smart phones play an important role in mobile communication and applications.&nbsp;</span></b></p>
+<p><b><span style="color: rgb(152, 202, 62);">Smart phones are powerful as they support a wide range of applications (called apps). Most of the time, smart phone users just purchase their favorite apps wirelessly from the vendors. There is a great potential for software developer to reach worldwide users.</span></b><br></p>
+<p><b>This course aims at introducing the design issues of smart phone apps. For examples, the smart phone screen is usually much smaller than the computer monitor. We have to pay special attention to this aspect in order to develop attractive and successful apps. Different smart phone apps development environments and programming techniques (such as Java for Android phones and Swift for iPhones) will be introduced to facilitate students to develop their own apps.</b></p><br>
+<p></p></div></div></div><div class="teachers">Teacher: <a href="https://moodle.hku.hk/user/view.php?id=51235&amp;course=1">Chim Tat Wing</a>, <a href="https://moodle.hku.hk/user/view.php?id=179176&amp;course=1">MSc(CompSc) Moodle Course Admin</a></div><div class="course-btn"><p><a class="btn btn-primary" href="https://moodle.hku.hk/course/view.php?id=89517">Click to enter this course</a></p></div></div></div><div class="coursebox clearfix even" data-courseid="89511" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://moodle.hku.hk/course/view.php?id=89511">COMP7309 Quantum computing and artificial intelligence [Section 2A, 2021]</a></h3><div class="moreinfo"></div></div><div class="content"><div class="courseimage" style="background-image: url(https://moodle.hku.hk/pluginfile.php/3348880/course/overviewfiles/f5ee15b8f6520b6b22700e18976bd6d3.jpg);"></div><div class="summary"><h3 class="coursename"><a class="" href="https://moodle.hku.hk/course/view.php?id=89511">COMP7309 Quantum computing and artificial intelligence [Section 2A, 2021]</a></h3><div></div></div><div class="teachers">Teacher: <a href="https://moodle.hku.hk/user/view.php?id=185809&amp;course=1">Ebler Daniel</a>, <a href="https://moodle.hku.hk/user/view.php?id=179176&amp;course=1">MSc(CompSc) Moodle Course Admin</a></div><div class="course-btn"><p><a class="btn btn-primary" href="https://moodle.hku.hk/course/view.php?id=89511">Click to enter this course</a></p></div></div></div><div class="coursebox clearfix odd" data-courseid="86155" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://moodle.hku.hk/course/view.php?id=86155">COMP7507 Visualization and visual analytics [Section 1A, 2021]</a></h3><div class="moreinfo"></div></div><div class="content"><div class="courseimage" style="background-image: url(https://moodle.hku.hk/pluginfile.php/3337173/course/overviewfiles/7507_banner-bg-01.png);"></div><div class="summary"><h3 class="coursename"><a class="" href="https://moodle.hku.hk/course/view.php?id=86155">COMP7507 Visualization and visual analytics [Section 1A, 2021]</a></h3><div></div></div><div class="teachers">Teacher: <a href="https://moodle.hku.hk/user/view.php?id=15287&amp;course=1">Choi Yi King</a>, <a href="https://moodle.hku.hk/user/view.php?id=179176&amp;course=1">MSc(CompSc) Moodle Course Admin</a></div><div class="course-btn"><p><a class="btn btn-primary" href="https://moodle.hku.hk/course/view.php?id=86155">Click to enter this course</a></p></div></div></div><div class="coursebox clearfix even" data-courseid="86153" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://moodle.hku.hk/course/view.php?id=86153">COMP7503 Multimedia technologies [Section 1A, 2021]</a></h3><div class="moreinfo"></div></div><div class="content"><div class="summary"><h3 class="coursename"><a class="" href="https://moodle.hku.hk/course/view.php?id=86153">COMP7503 Multimedia technologies [Section 1A, 2021]</a></h3><div></div></div><div class="teachers">Teacher: <a href="https://moodle.hku.hk/user/view.php?id=91708&amp;course=1">Luo Tao</a>, <a href="https://moodle.hku.hk/user/view.php?id=179176&amp;course=1">MSc(CompSc) Moodle Course Admin</a></div><div class="course-btn"><p><a class="btn btn-primary" href="https://moodle.hku.hk/course/view.php?id=86153">Click to enter this course</a></p></div></div></div><div class="coursebox clearfix odd" data-courseid="86149" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://moodle.hku.hk/course/view.php?id=86149">COMP7404 Computational intelligence and machine learning [Section 1B, 2021]</a></h3><div class="moreinfo"></div></div><div class="content"><div class="summary"><h3 class="coursename"><a class="" href="https://moodle.hku.hk/course/view.php?id=86149">COMP7404 Computational intelligence and machine learning [Section 1B, 2021]</a></h3><div></div></div><div class="teachers">Teacher: <a href="https://moodle.hku.hk/user/view.php?id=19438&amp;course=1">Chow Kam Pui</a>, <a href="https://moodle.hku.hk/user/view.php?id=179176&amp;course=1">MSc(CompSc) Moodle Course Admin</a>, <a href="https://moodle.hku.hk/user/view.php?id=19301&amp;course=1">Schnieders Dirk</a></div><div class="course-btn"><p><a class="btn btn-primary" href="https://moodle.hku.hk/course/view.php?id=86149">Click to enter this course</a></p></div></div></div><div class="coursebox clearfix even last" data-courseid="86145" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://moodle.hku.hk/course/view.php?id=86145">COMP7201 Analysis and design of enterprise applications in UML [Section 1A, 2021]</a></h3><div class="moreinfo"></div></div><div class="content"><div class="summary"><h3 class="coursename"><a class="" href="https://moodle.hku.hk/course/view.php?id=86145">COMP7201 Analysis and design of enterprise applications in UML [Section 1A, 2021]</a></h3><div></div></div><div class="teachers">Teacher: <a href="https://moodle.hku.hk/user/view.php?id=179176&amp;course=1">MSc(CompSc) Moodle Course Admin</a>, <a href="https://moodle.hku.hk/user/view.php?id=23607&amp;course=1">Tse T.H.</a></div><div class="course-btn"><p><a class="btn btn-primary" href="https://moodle.hku.hk/course/view.php?id=86145">Click to enter this course</a></p></div></div></div><div class="paging paging-morelink"><a href="https://moodle.hku.hk/course/index.php">All courses</a></div></div></div><span class="skip-block-to" id="skipmycourses"></span><br><div class="box py-3 mdl-align"><form action="https://moodle.hku.hk/course/search.php" id="coursesearch" method="get" class="form-inline">
+    <fieldset class="coursesearchbox invisiblefieldset">
+        <label for="shortsearchbox">Search courses</label>
+        <input id="shortsearchbox" name="q" type="text" size="12" value="" class="form-control mb-1 mb-sm-0">
+        <input name="areaids" type="hidden" value="core_course-course">
+        <button class="btn btn-secondary" type="submit">Go</button>
+            <a class="btn btn-link p-0" role="button" data-container="body" data-toggle="popover" data-placement="right" data-content="&lt;div class=&quot;no-overflow&quot;&gt;&lt;p&gt;You can search for multiple words at once and can refine your search as follows:&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;word - find any match of this word within the text&lt;/li&gt;
+&lt;li&gt;+word - only exact matching words will be found&lt;/li&gt;
+&lt;li&gt;-word - don&#39;t include results containing this word.&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt; " data-html="true" tabindex="0" data-trigger="focus" data-original-title="" title="">
+              <img class="icon " alt="Help with Search courses" title="Help with Search courses" src="./HKU Moodle_files/help.svg">
+            </a>
+    </fieldset>
+</form></div><br></div>
+        		</section>
+        	            </div>
+        	</div>
+        <aside id="block-region-side-post" class="span3 block-region" data-blockregion="side-post" data-droptarget="1"><a href="https://moodle.hku.hk/#sb-5" class="sr-only sr-only-focusable">Skip Message on Copyright Issue</a>
+
+<section id="inst330654" class=" block_html block  card mb-3" role="complementary" data-block="html" aria-labelledby="instance-330654-header">
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-330654-header" class="card-title d-inline">Message on Copyright Issue</h5>
+
+
+        <div class="card-text content mt-3">
+            <div class="no-overflow"><p><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:black">If you are not the
+author,&nbsp;making copies of course materials (e.g., PowerPoint
+files)&nbsp;available online in places other than&nbsp;HKU Moodle&nbsp;may
+constitute&nbsp;an act of copyright infringement. Please use the materials
+responsibly.</span></p>
+<p><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:black">According to the Copyright Ordinance, materials put on Moodle will only
+be exempted from copyright infringement for the purpose of giving and receiving
+instruction under section 41A if (1) it's password-protected and (2) the
+intranet page is available for NOT MORE THAN 12 MONTHS. If you have such meterial in Moodle courses, please remove it at end of academic year.<br></span></p>
+<p><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:black">For
+details, please check <a href="https://hku.to/Copyright_Classroom_L2" target="_blank">https://hku.to/Copyright_Classroom_L2</a>
+or <a href="https://hku.to/Copyright_Classroom" target="_blank">https://hku.to/Copyright_Classroom</a>.<br></span></p></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-5"></span><a href="https://moodle.hku.hk/#sb-6" class="sr-only sr-only-focusable">Skip Calendar</a>
+
+<section id="inst3" class=" block_calendar_month block  card mb-3" role="complementary" data-block="calendar_month" aria-labelledby="instance-3-header">
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-3-header" class="card-title d-inline">Calendar</h5>
+
+
+        <div class="card-text content mt-3">
+            <div id="calendar-month-2022-4-6246afde85a356246afde7024511" data-template="core_calendar/month_mini" data-includenavigation="true" data-mini="true">
+    <div id="month-mini-2022-4-0" class="calendarwrapper" data-courseid="1" data-categoryid="0" data-month="4" data-year="2022" data-day="1" data-view="month">
+
+
+    <span class="overlay-icon-container hidden" data-region="overlay-icon-container">
+
+
+        <span class="loading-icon icon-no-margin"><img class="icon " src="./HKU Moodle_files/loading.gif" alt="Loading" title="Loading"></span>
+    </span>
+    <table class="minicalendar calendartable">
+        <caption class="calendar-controls">
+                <a href="https://moodle.hku.hk/#" class="arrow_link previous" title="Previous month" data-year="2022" data-month="3">
+                    <span class="arrow">◄</span>
+                </a>
+                <span class="hide"> | </span>
+                <span class="current">
+                    <a href="https://moodle.hku.hk/calendar/view.php?view=month&amp;time=1648742400" title="This month">April 2022</a>
+                </span>
+                <span class="hide"> | </span>
+                <a href="https://moodle.hku.hk/#" class="arrow_link next" title="Next month" data-year="2022" data-month="5">
+                    <span class="arrow">►</span>
+                </a>
+        </caption>
+        <thead>
+          <tr>
+                <th class="header text-xs-center">
+                    <span class="sr-only">Sunday</span>
+                    <span aria-hidden="true">Sun</span>
+                </th>
+                <th class="header text-xs-center">
+                    <span class="sr-only">Monday</span>
+                    <span aria-hidden="true">Mon</span>
+                </th>
+                <th class="header text-xs-center">
+                    <span class="sr-only">Tuesday</span>
+                    <span aria-hidden="true">Tue</span>
+                </th>
+                <th class="header text-xs-center">
+                    <span class="sr-only">Wednesday</span>
+                    <span aria-hidden="true">Wed</span>
+                </th>
+                <th class="header text-xs-center">
+                    <span class="sr-only">Thursday</span>
+                    <span aria-hidden="true">Thu</span>
+                </th>
+                <th class="header text-xs-center">
+                    <span class="sr-only">Friday</span>
+                    <span aria-hidden="true">Fri</span>
+                </th>
+                <th class="header text-xs-center">
+                    <span class="sr-only">Saturday</span>
+                    <span aria-hidden="true">Sat</span>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-region="month-view-week">
+                    <td class="dayblank">&nbsp;</td>
+                    <td class="dayblank">&nbsp;</td>
+                    <td class="dayblank">&nbsp;</td>
+                    <td class="dayblank">&nbsp;</td>
+                    <td class="dayblank">&nbsp;</td>
+                    <td class="day text-center today hasevent calendar_event_course duration_finish" data-eventtype-course="1" data-day-timestamp="1648742400"><span class="sr-only">1 event, Friday, 1 April</span>
+
+
+<a id="calendar-day-popover-link-1-2022-90-0" href="https://moodle.hku.hk/calendar/view.php?view=day&amp;time=1648742400" data-container="body" data-toggle="popover" data-html="true" data-region="mini-day-link" data-trigger="hover focus" data-placement="top" data-year="2022" data-month="4" data-courseid="1" data-categoryid="0" data-title="Today Friday, 1 April" data-alternate="No events" aria-label="Today Friday, 1 April" data-original-title="" title="">1</a>
+<div class="hidden">
+
+                                        <div data-popover-eventtype-course="1">
+
+
+                                                <img class="icon " src="./HKU Moodle_files/icon.svg" alt="" title="" aria-hidden="true">
+                                            COMP7905_2A_2021: Lab 3 – Analysis of the sample “withme_vbox.exe” is due
+                                        </div>
+                                </div>
+</td>
+                    <td class="day text-center weekend" data-day-timestamp="1648828800"><span class="sr-only">No events, Saturday, 2 April</span>
+                            <span aria-hidden="true">2</span>
+                        </td>
+            </tr>
+            <tr data-region="month-view-week">
+                    <td class="day text-center weekend" data-day-timestamp="1648915200"><span class="sr-only">No events, Sunday, 3 April</span>
+                            <span aria-hidden="true">3</span>
+                        </td>
+                    <td class="day text-center" data-day-timestamp="1649001600"><span class="sr-only">No events, Monday, 4 April</span>
+                            <span aria-hidden="true">4</span>
+                        </td>
+                    <td class="day text-center" data-day-timestamp="1649088000"><span class="sr-only">No events, Tuesday, 5 April</span>
+                            <span aria-hidden="true">5</span>
+                        </td>
+                    <td class="day text-center" data-day-timestamp="1649174400"><span class="sr-only">No events, Wednesday, 6 April</span>
+                            <span aria-hidden="true">6</span>
+                        </td>
+                    <td class="day text-center" data-day-timestamp="1649260800"><span class="sr-only">No events, Thursday, 7 April</span>
+                            <span aria-hidden="true">7</span>
+                        </td>
+                    <td class="day text-center hasevent calendar_event_course duration_finish" data-eventtype-course="1" data-day-timestamp="1649347200"><span class="sr-only">1 event, Friday, 8 April</span>
+
+
+<a id="calendar-day-popover-link-1-2022-97-0" href="https://moodle.hku.hk/calendar/view.php?view=day&amp;time=1649347200" data-container="body" data-toggle="popover" data-html="true" data-region="mini-day-link" data-trigger="hover focus" data-placement="top" data-year="2022" data-month="4" data-courseid="1" data-categoryid="0" data-title="Friday, 8 April events" data-alternate="No events" aria-label="Friday, 8 April events" data-original-title="" title="">8</a>
+<div class="hidden">
+
+                                        <div data-popover-eventtype-course="1">
+
+
+                                                <img class="icon " src="./HKU Moodle_files/icon.svg" alt="" title="" aria-hidden="true">
+                                            COMP7905_2A_2021: Lab 4 – Analysis of the sample “DAT.exe”Assignment is due
+                                        </div>
+                                </div>
+</td>
+                    <td class="day text-center weekend hasevent calendar_event_course duration_finish" data-eventtype-course="1" data-day-timestamp="1649433600"><span class="sr-only">1 event, Saturday, 9 April</span>
+
+
+<a id="calendar-day-popover-link-1-2022-98-0" href="https://moodle.hku.hk/calendar/view.php?view=day&amp;time=1649433600" data-container="body" data-toggle="popover" data-html="true" data-region="mini-day-link" data-trigger="hover focus" data-placement="top" data-year="2022" data-month="4" data-courseid="1" data-categoryid="0" data-title="Saturday, 9 April events" data-alternate="No events" aria-label="Saturday, 9 April events" data-original-title="" title="">9</a>
+<div class="hidden">
+
+                                        <div data-popover-eventtype-course="1">
+
+
+                                                <img class="icon " src="./HKU Moodle_files/icon.svg" alt="" title="" aria-hidden="true">
+                                            COMP7905_2A_2021: Lab 5 Process Enum Exercise is due
+                                        </div>
+                                </div>
+</td>
+            </tr>
+            <tr data-region="month-view-week">
+                    <td class="day text-center weekend hasevent calendar_event_course duration_finish" data-eventtype-course="1" data-day-timestamp="1649520000"><span class="sr-only">1 event, Sunday, 10 April</span>
+
+
+<a id="calendar-day-popover-link-1-2022-99-0" href="https://moodle.hku.hk/calendar/view.php?view=day&amp;time=1649520000" data-container="body" data-toggle="popover" data-html="true" data-region="mini-day-link" data-trigger="hover focus" data-placement="top" data-year="2022" data-month="4" data-courseid="1" data-categoryid="0" data-title="Sunday, 10 April events" data-alternate="No events" aria-label="Sunday, 10 April events" data-original-title="" title="">10</a>
+<div class="hidden">
+
+                                        <div data-popover-eventtype-course="1">
+
+
+                                                <img class="icon " src="./HKU Moodle_files/icon.svg" alt="" title="" aria-hidden="true">
+                                            COMP7309_2A_2021: Assignment 4 is due
+                                        </div>
+                                </div>
+</td>
+                    <td class="day text-center" data-day-timestamp="1649606400"><span class="sr-only">No events, Monday, 11 April</span>
+                            <span aria-hidden="true">11</span>
+                        </td>
+                    <td class="day text-center" data-day-timestamp="1649692800"><span class="sr-only">No events, Tuesday, 12 April</span>
+                            <span aria-hidden="true">12</span>
+                        </td>
+                    <td class="day text-center" data-day-timestamp="1649779200"><span class="sr-only">No events, Wednesday, 13 April</span>
+                            <span aria-hidden="true">13</span>
+                        </td>
+                    <td class="day text-center" data-day-timestamp="1649865600"><span class="sr-only">No events, Thursday, 14 April</span>
+                            <span aria-hidden="true">14</span>
+                        </td>
+                    <td class="day text-center" data-day-timestamp="1649952000"><span class="sr-only">No events, Friday, 15 April</span>
+                            <span aria-hidden="true">15</span>
+                        </td>
+                    <td class="day text-center weekend" data-day-timestamp="1650038400"><span class="sr-only">No events, Saturday, 16 April</span>
+                            <span aria-hidden="true">16</span>
+                        </td>
+            </tr>
+            <tr data-region="month-view-week">
+                    <td class="day text-center weekend hasevent calendar_event_course duration_finish" data-eventtype-course="1" data-day-timestamp="1650124800"><span class="sr-only">1 event, Sunday, 17 April</span>
+
+
+<a id="calendar-day-popover-link-1-2022-106-0" href="https://moodle.hku.hk/calendar/view.php?view=day&amp;time=1650124800" data-container="body" data-toggle="popover" data-html="true" data-region="mini-day-link" data-trigger="hover focus" data-placement="top" data-year="2022" data-month="4" data-courseid="1" data-categoryid="0" data-title="Sunday, 17 April events" data-alternate="No events" aria-label="Sunday, 17 April events" data-original-title="" title="">17</a>
+<div class="hidden">
+
+                                        <div data-popover-eventtype-course="1">
+
+
+                                                <img class="icon " src="./HKU Moodle_files/icon.svg" alt="" title="" aria-hidden="true">
+                                            COMP7305_2B_2021: Project Report Submission:  Due: 11:59pm, April 17 (Sunday) is due
+                                        </div>
+                                </div>
+</td>
+                    <td class="day text-center" data-day-timestamp="1650211200"><span class="sr-only">No events, Monday, 18 April</span>
+                            <span aria-hidden="true">18</span>
+                        </td>
+                    <td class="day text-center hasevent calendar_event_course duration_finish" data-eventtype-course="1" data-day-timestamp="1650297600"><span class="sr-only">1 event, Tuesday, 19 April</span>
+
+
+<a id="calendar-day-popover-link-1-2022-108-0" href="https://moodle.hku.hk/calendar/view.php?view=day&amp;time=1650297600" data-container="body" data-toggle="popover" data-html="true" data-region="mini-day-link" data-trigger="hover focus" data-placement="top" data-year="2022" data-month="4" data-courseid="1" data-categoryid="0" data-title="Tuesday, 19 April events" data-alternate="No events" aria-label="Tuesday, 19 April events" data-original-title="" title="">19</a>
+<div class="hidden">
+
+                                        <div data-popover-eventtype-course="1">
+
+
+                                                <img class="icon " src="./HKU Moodle_files/icon.png" alt="" title="" aria-hidden="true">
+                                            _MSC-WKSHL1_S2_2_2021:  (Revised and Final) Turnitin Submission of Lit Review Due: 19 April 2022 Tuesday 11.50 pm - Part 1
+                                        </div>
+                                </div>
+</td>
+                    <td class="day text-center hasevent calendar_event_course duration_finish" data-eventtype-course="1" data-day-timestamp="1650384000"><span class="sr-only">1 event, Wednesday, 20 April</span>
+
+
+<a id="calendar-day-popover-link-1-2022-109-0" href="https://moodle.hku.hk/calendar/view.php?view=day&amp;time=1650384000" data-container="body" data-toggle="popover" data-html="true" data-region="mini-day-link" data-trigger="hover focus" data-placement="top" data-year="2022" data-month="4" data-courseid="1" data-categoryid="0" data-title="Wednesday, 20 April events" data-alternate="No events" aria-label="Wednesday, 20 April events" data-original-title="" title="">20</a>
+<div class="hidden">
+
+                                        <div data-popover-eventtype-course="1">
+
+
+                                                <img class="icon " src="./HKU Moodle_files/icon.svg" alt="" title="" aria-hidden="true">
+                                            _COMP7705_2021: Detailed Project Proposal is due
+                                        </div>
+                                </div>
+</td>
+                    <td class="day text-center" data-day-timestamp="1650470400"><span class="sr-only">No events, Thursday, 21 April</span>
+                            <span aria-hidden="true">21</span>
+                        </td>
+                    <td class="day text-center" data-day-timestamp="1650556800"><span class="sr-only">No events, Friday, 22 April</span>
+                            <span aria-hidden="true">22</span>
+                        </td>
+                    <td class="day text-center weekend" data-day-timestamp="1650643200"><span class="sr-only">No events, Saturday, 23 April</span>
+                            <span aria-hidden="true">23</span>
+                        </td>
+            </tr>
+            <tr data-region="month-view-week">
+                    <td class="day text-center weekend" data-day-timestamp="1650729600"><span class="sr-only">No events, Sunday, 24 April</span>
+                            <span aria-hidden="true">24</span>
+                        </td>
+                    <td class="day text-center" data-day-timestamp="1650816000"><span class="sr-only">No events, Monday, 25 April</span>
+                            <span aria-hidden="true">25</span>
+                        </td>
+                    <td class="day text-center" data-day-timestamp="1650902400"><span class="sr-only">No events, Tuesday, 26 April</span>
+                            <span aria-hidden="true">26</span>
+                        </td>
+                    <td class="day text-center" data-day-timestamp="1650988800"><span class="sr-only">No events, Wednesday, 27 April</span>
+                            <span aria-hidden="true">27</span>
+                        </td>
+                    <td class="day text-center" data-day-timestamp="1651075200"><span class="sr-only">No events, Thursday, 28 April</span>
+                            <span aria-hidden="true">28</span>
+                        </td>
+                    <td class="day text-center" data-day-timestamp="1651161600"><span class="sr-only">No events, Friday, 29 April</span>
+                            <span aria-hidden="true">29</span>
+                        </td>
+                    <td class="day text-center weekend hasevent calendar_event_course duration_finish" data-eventtype-course="1" data-day-timestamp="1651248000"><span class="sr-only">5 events, Saturday, 30 April</span>
+
+
+<a id="calendar-day-popover-link-1-2022-119-0" href="https://moodle.hku.hk/calendar/view.php?view=day&amp;time=1651248000" data-container="body" data-toggle="popover" data-html="true" data-region="mini-day-link" data-trigger="hover focus" data-placement="top" data-year="2022" data-month="4" data-courseid="1" data-categoryid="0" data-title="Saturday, 30 April events" data-alternate="No events" aria-label="Saturday, 30 April events" data-original-title="" title="">30</a>
+<div class="hidden">
+
+                                        <div data-popover-eventtype-course="1">
+
+
+                                                <img class="icon " src="./HKU Moodle_files/icon.svg" alt="" title="" aria-hidden="true">
+                                            COMP7506_2A_2021: Submission of Group Assignment (Document File) is due
+                                        </div>
+                                        <div data-popover-eventtype-course="1">
+
+
+                                                <img class="icon " src="./HKU Moodle_files/icon.svg" alt="" title="" aria-hidden="true">
+                                            COMP7506_2A_2021: Submission of Group Assignment (Source Code) is due
+                                        </div>
+                                        <div data-popover-eventtype-course="1">
+
+
+                                                <img class="icon " src="./HKU Moodle_files/icon.svg" alt="" title="" aria-hidden="true">
+                                            COMP7506_2A_2021: Submission of Group Assignment (Short Video) is due
+                                        </div>
+                                        <div data-popover-eventtype-course="1">
+
+
+                                                <img class="icon " src="./HKU Moodle_files/icon.svg" alt="" title="" aria-hidden="true">
+                                            COMP7506_2A_2021: Submission System is due
+                                        </div>
+                                        <div data-popover-eventtype-course="1">
+
+
+                                                <img class="icon " src="./HKU Moodle_files/icon.svg" alt="" title="" aria-hidden="true">
+                                            COMP7506_2A_2021: Submission of iOS Workshop Exercise [Due: 30 April 2022 (Sat), 23:59] is due
+                                        </div>
+                                </div>
+</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -15,7 +15,7 @@ public class GetCalendar {
     @Test
     public void getCalendar() throws IOException {
         try {
-            String pathname = "assets/test.txt";
+            String pathname = "D:\\HKU\\Sem_2\\App\\ClassTimeTable\\app\\src\\main\\assets\\courses.txt";
             File filename = new File(pathname);
             InputStreamReader reader  = new InputStreamReader (new FileInputStream(filename));
             BufferedReader br = new BufferedReader(reader);

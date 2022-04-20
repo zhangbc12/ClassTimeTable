@@ -29,6 +29,8 @@ import java.net.URLConnection;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -40,6 +42,8 @@ import javax.net.ssl.X509TrustManager;
 public class MainActivity extends Activity implements View.OnClickListener  {
 
     public static DBHelper DB;
+    public static Map<String, String> monthMap;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +58,22 @@ public class MainActivity extends Activity implements View.OnClickListener  {
         // Whenever the button is clicked, onClick is called
         btn_Login.setOnClickListener(this);
 
+        monthMap = new HashMap<String, String>();
+        monthMap.put("Jan", "01");
+        monthMap.put("Feb", "02");
+        monthMap.put("Mar", "03");
+        monthMap.put("Apr", "04");
+        monthMap.put("May", "05");
+        monthMap.put("Jun", "06");
+        monthMap.put("Jul", "07");
+        monthMap.put("Aug", "08");
+        monthMap.put("Sep", "09");
+        monthMap.put("Oct", "10");
+        monthMap.put("Nov", "11");
+        monthMap.put("Dec", "12");
+
         DB = new DBHelper(this);
+//        DB.clearOldTable();
 
         doTrustToCertificates();
         CookieHandler.setDefault(new CookieManager());
@@ -324,6 +343,7 @@ public class MainActivity extends Activity implements View.OnClickListener  {
         }
     }
 
+
     protected void alert(String title, String mymessage) {
         new AlertDialog.Builder(this)
                 .setMessage(mymessage)
@@ -369,6 +389,7 @@ public class MainActivity extends Activity implements View.OnClickListener  {
                 // 测试版不用输入用户名和密码直接登录，用保存在本地的html页面“assets/test.txt”做测试
 //                moodlePageContent = getMoodleFirstPage(userName, userPW);
                 moodlePageContent = getHTMLSource();
+
                 if( moodlePageContent.equals("Fail to login") )
                     success = false;
                 return null;
@@ -380,8 +401,7 @@ public class MainActivity extends Activity implements View.OnClickListener  {
                     parse_HTML_Source_to_Course( moodlePageContent );
                     // 解析html页面，获取Event-Date，将 Event-Date 存入 EventDate 数据表
                     parse_HTML_Source_to_Event( moodlePageContent );
-                    // 登录成功进入菜单页
-                    startActivity(new Intent(getBaseContext(), MenuActivity.class));
+                    startActivity(new Intent(getBaseContext(), CourseActivity.class));
                 } else {
                     alert( "Error", "Fail to login" );
                 }

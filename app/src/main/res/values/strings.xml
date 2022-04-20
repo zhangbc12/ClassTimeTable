@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ClassTimeTable</string>
+    <string name="year_month">Mar 2022</string>
+    <string name="sun_mday"></string>
 </resources>

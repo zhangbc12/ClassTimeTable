@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MenuActivity">
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select a Item"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btn_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="View Classes"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/texttitle"/>
+    <Button
+        android:id="@+id/btn_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="View Events"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btn_course"/>
+    <Button
+        android:id="@+id/btn_test_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Course Test"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btn_event"/>
+    <Button
+        android:id="@+id/btn_test_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Event Test"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btn_test_course"/>
+</RelativeLayout>

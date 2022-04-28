@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/light_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_centerInParent="true"
+        android:transitionName="logo"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HKU Calendar"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/img_logo"
+        android:textSize="45sp"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="-10dp"
+        android:transitionName="logo_text"/>
+
+    <ImageView
+        android:id="@+id/img_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background_bottom"
+        android:layout_alignParentBottom="true"
+        android:transitionName="img_tree"/>
+</RelativeLayout>
